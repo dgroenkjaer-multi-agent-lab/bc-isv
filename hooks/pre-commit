@@ -1,0 +1,9 @@
+#!/bin/sh
+# bc-developer pre-commit hook
+# Automatically bumps VERSION and updates CHANGELOG.md on every commit.
+# Install via: pwsh scripts/install-hooks.ps1
+
+# Note: at pre-commit time COMMIT_EDITMSG is not yet written.
+# We pass an empty message — bump-version.ps1 will generate a summary from staged files.
+pwsh -NoProfile -ExecutionPolicy Bypass \
+    -File "$(git rev-parse --show-toplevel)/scripts/bump-version.ps1"

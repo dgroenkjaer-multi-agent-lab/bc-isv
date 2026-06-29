@@ -13,7 +13,7 @@ This repo contains domain knowledge for third-party ISV products commonly used w
 
 Open the project in opencode and say:
 
-> "Set up ISV knowledge for this project. See https://github.com/dgroenkjaer-multi-agent-lab/bc-isv/blob/main/GETTING-STARTED.md"
+> "Set up ISV knowledge for this project. See https://github.com/dgroenkjaer-multi-agent-lab/bc-isv-template/blob/main/GETTING-STARTED.md"
 
 The agent will ask which ISV products are in scope and copy only the relevant skills.
 

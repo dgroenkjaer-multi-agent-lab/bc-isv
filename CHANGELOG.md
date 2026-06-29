@@ -1,5 +1,12 @@
 # bc-developer Changelog
 
+## v1.0.2 — 2026-06-29
+
+### Changed
+- `README.md`
+
+---
+
 ## v1.0.1 — 2026-06-29
 
 ### Added

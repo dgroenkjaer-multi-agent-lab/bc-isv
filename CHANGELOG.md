@@ -1,3 +1,12 @@
+# bc-developer Changelog
+
+## v1.0.1 — 2026-06-29
+
+### Added
+- `scripts/publish-template.ps1`
+
+---
+
 # bc-isv Changelog
 
 ## v1.0.0 — 2026-06-25

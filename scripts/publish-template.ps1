@@ -102,6 +102,17 @@ foreach ($script in $includeScripts) {
 
 Write-Host "   done" -ForegroundColor Green
 
+# ── Patch README — rewrite private repo URL to public repo URL ────────────────
+Write-Host ">> Patching README.md for public distribution..." -ForegroundColor Cyan
+$readmePath = Join-Path $tempPath "README.md"
+if (Test-Path $readmePath) {
+    $readme = Get-Content $readmePath -Raw
+    $readme = $readme -replace 'github\.com/dgroenkjaer-multi-agent-lab/bc-isv/blob/main/GETTING-STARTED\.md',
+                                'github.com/dgroenkjaer-multi-agent-lab/bc-isv-template/blob/main/GETTING-STARTED.md'
+    Set-Content $readmePath $readme -NoNewline
+    Write-Host "   done" -ForegroundColor Green
+}
+
 # ── Commit and push ───────────────────────────────────────────────────────────
 Write-Host ">> Committing and pushing..." -ForegroundColor Cyan
 git -C $tempPath add . 2>&1 | Out-Null

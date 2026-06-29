@@ -1,5 +1,13 @@
 # bc-developer Changelog
 
+## v1.0.3 — 2026-06-29
+
+### Changed
+- `README.md`
+- `scripts/publish-template.ps1`
+
+---
+
 ## v1.0.2 — 2026-06-29
 
 ### Changed
